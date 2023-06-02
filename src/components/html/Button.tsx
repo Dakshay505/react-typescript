@@ -9,7 +9,7 @@ type buttonProp ={
 const Button = ({varient ,children , ...rest}:buttonProp) => {
   return (
     <div>
-        <button className={varient} >{children}</button>
+        <button className={varient} {...rest}>{children}</button>
     </div>
   )
 }
