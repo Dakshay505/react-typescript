@@ -22,7 +22,9 @@ import "./App.css";
 // import Profile from "./components/auth/Profile";
 // import List from "./components/generic/List";
 // import RandomNumber from "./components/restriction/RandomNumber";
-import Toast from "./components/templateLiterals/Toast";
+// import Toast from "./components/templateLiterals/Toast";
+
+import Button from "./components/html/Button";
 
 function App() {
   //  const person = {
@@ -40,7 +42,6 @@ function App() {
   //   lastName:"Wayne"
   //  }]
 
- 
   return (
     <>
       {/* <Greet name="Dakshay" numType={11} boolType={false} />
@@ -101,7 +102,16 @@ function App() {
       /> */}
 
       {/* <RandomNumber  value={23} isPositive /> */}
-      <Toast position="center" />
+      {/* <Toast position="center" /> */}
+
+      <Button
+        varient="primary"
+        onClick={() => {
+          console.log("button clicked");
+        }}
+      >
+        primary button
+      </Button>
     </>
   );
 }
