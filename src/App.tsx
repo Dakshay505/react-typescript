@@ -1,4 +1,5 @@
 import "./App.css";
+import Counter from "./components/class/Counter";
 // import ConditionStatus from "./components/ConditionStatus";
 // import CounterUseReducer from "./components/CounterUseReducer";
 // import EventProps from "./components/EventProps";
@@ -10,10 +11,10 @@ import "./App.css";
 
 // import Box from "./components/context/Box";
 // import ThemeContextProvider from "./components/context/ThemeContextProvider";
-import User from "./components/context/User";
-import UserProvider  from "./components/context/User.Context";
-import DomRef from "./components/ref/DomRef";
-import MutableRef from "./components/ref/MutableRef";
+// import User from "./components/context/User";
+// import UserProvider  from "./components/context/User.Context";
+// import DomRef from "./components/ref/DomRef";
+// import MutableRef from "./components/ref/MutableRef";
 
 function App() {
   //  const person = {
@@ -51,11 +52,15 @@ function App() {
       {/* <ThemeContextProvider>
         <Box />
       </ThemeContextProvider> */}
-      <UserProvider>
+      {/* <UserProvider>
          <User/>
       </UserProvider>
       <MutableRef/>
-      <DomRef/>
+      <DomRef/> */}
+
+      <Counter message="THis is class component" />
+
+
     </>
   );
 }

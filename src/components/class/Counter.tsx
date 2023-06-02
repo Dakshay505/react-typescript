@@ -20,7 +20,7 @@ export default class Counter extends Component <CounterProps,CounterState> {
     return (
       <div>
        <button onClick={this.handleClick}> CounterButton</button>
-       <p>{this.state.count}</p>
+       <p>{this.state.count}<br/> {this.props.message}</p>
       </div>
     )
   }
