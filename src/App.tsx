@@ -20,7 +20,8 @@ import "./App.css";
 
 // import Private from "./components/auth/Private";
 // import Profile from "./components/auth/Profile";
-import List from "./components/generic/List";
+// import List from "./components/generic/List";
+import RandomNumber from "./components/restriction/RandomNumber";
 
 function App() {
   //  const person = {
@@ -76,7 +77,7 @@ function App() {
           console.log(value);
         }}
       /> */}
-      <List
+      {/* <List
         items={[{
           id:1,
           name:"dakshay"
@@ -96,7 +97,9 @@ function App() {
         onClick={(value) => {
           console.log(value);
         }}
-      />
+      /> */}
+
+      <RandomNumber  value={23} isPositive />
     </>
   );
 }

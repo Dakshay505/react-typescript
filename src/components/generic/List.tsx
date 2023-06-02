@@ -14,12 +14,12 @@ const List = <T extends {id:number,name:string} >({ items, onClick }: Props<T>) 
             style={{ cursor: "pointer" }}
             onClick={() => onClick(item)}
             >
-            {item.id} {item.name}
+           {item.name}
           </div>
-        );
+        )
       })}
     </div>
-  );
-};
+    )
+}
 
 export default List;
