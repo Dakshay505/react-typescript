@@ -21,7 +21,8 @@ import "./App.css";
 // import Private from "./components/auth/Private";
 // import Profile from "./components/auth/Profile";
 // import List from "./components/generic/List";
-import RandomNumber from "./components/restriction/RandomNumber";
+// import RandomNumber from "./components/restriction/RandomNumber";
+import Toast from "./components/templateLiterals/Toast";
 
 function App() {
   //  const person = {
@@ -99,7 +100,8 @@ function App() {
         }}
       /> */}
 
-      <RandomNumber  value={23} isPositive />
+      {/* <RandomNumber  value={23} isPositive /> */}
+      <Toast position="center" />
     </>
   );
 }
