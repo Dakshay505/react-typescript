@@ -1,4 +1,5 @@
 import "./App.css";
+import Text from "./components/polymorphic/Text";
 
 // import ConditionStatus from "./components/ConditionStatus";
 // import CounterUseReducer from "./components/CounterUseReducer";
@@ -24,7 +25,7 @@ import "./App.css";
 // import RandomNumber from "./components/restriction/RandomNumber";
 // import Toast from "./components/templateLiterals/Toast";
 
-import Button from "./components/html/Button";
+// import Button from "./components/html/Button";
 
 function App() {
   //  const person = {
@@ -104,14 +105,18 @@ function App() {
       {/* <RandomNumber  value={23} isPositive /> */}
       {/* <Toast position="center" /> */}
 
-      <Button
+      {/* <Button
         varient="primary"
         onClick={() => {
           console.log("button clicked");
         }}
       >
         primary button
-      </Button>
+      </Button> */}
+
+      <Text size="md" color="primary" as="h1" >
+        <h2>This is h2</h2>
+      </Text>
     </>
   );
 }
