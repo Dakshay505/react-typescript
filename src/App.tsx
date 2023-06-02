@@ -18,8 +18,9 @@ import "./App.css";
 
 // import Counter from "./components/class/Counter";
 
-import Private from "./components/auth/Private";
-import Profile from "./components/auth/Profile";
+// import Private from "./components/auth/Private";
+// import Profile from "./components/auth/Profile";
+import List from "./components/generic/List";
 
 function App() {
   //  const person = {
@@ -36,6 +37,8 @@ function App() {
   //   firstName:"Bruce",
   //   lastName:"Wayne"
   //  }]
+
+ 
   return (
     <>
       {/* <Greet name="Dakshay" numType={11} boolType={false} />
@@ -64,9 +67,36 @@ function App() {
       <DomRef/> */}
 
       {/* <Counter message="THis is class component" /> */}
-        
-        <Private isLoggedIn={true} component={Profile} />
 
+      {/* <Private isLoggedIn={true} component={Profile} /> */}
+
+      {/* <List
+        items={["dakshay", "bishnoi", "adi", "deepak", "ru"]}
+        onClick={(value) => {
+          console.log(value);
+        }}
+      /> */}
+      <List
+        items={[{
+          id:1,
+          name:"dakshay"
+        },
+        {
+          id:2,
+          name:"Rup"
+        },
+        {
+          id:3,
+          name:"Aditya"
+        },
+        {
+          id:4,
+          name:"Yogi"
+        }]}
+        onClick={(value) => {
+          console.log(value);
+        }}
+      />
     </>
   );
 }
