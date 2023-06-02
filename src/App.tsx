@@ -1,5 +1,5 @@
 import "./App.css";
-import Counter from "./components/class/Counter";
+
 // import ConditionStatus from "./components/ConditionStatus";
 // import CounterUseReducer from "./components/CounterUseReducer";
 // import EventProps from "./components/EventProps";
@@ -15,6 +15,11 @@ import Counter from "./components/class/Counter";
 // import UserProvider  from "./components/context/User.Context";
 // import DomRef from "./components/ref/DomRef";
 // import MutableRef from "./components/ref/MutableRef";
+
+// import Counter from "./components/class/Counter";
+
+import Private from "./components/auth/Private";
+import Profile from "./components/auth/Profile";
 
 function App() {
   //  const person = {
@@ -58,8 +63,9 @@ function App() {
       <MutableRef/>
       <DomRef/> */}
 
-      <Counter message="THis is class component" />
-
+      {/* <Counter message="THis is class component" /> */}
+        
+        <Private isLoggedIn={true} component={Profile} />
 
     </>
   );
